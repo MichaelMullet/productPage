@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: helvetica;
 }
 
 #body {
@@ -49,27 +50,30 @@ li {
     height: auto;
     display: block;
     margin-top: 5px;
+    margin-left: 5px;
 }
 
 #diag-div {
     display: flex;
     background-image: 
-        url("https://i.imgur.com/Bm4JAEW.png"), 
-        url("https://i.imgur.com/DfGGdNC.png");
+        url("https://i.imgur.com/DfGGdNC.png"),
+        url("https://i.imgur.com/Bm4JAEW.png");
     background-repeat: no-repeat;
     background-position:
-        top left,
-        top right;
-    background-size: 100%;
-    height: 1500px;
+        top right,
+        0px 40px;
+    background-size: 
+        60%,
+        100%;
+    height: 100vh;
 }
 
 #title {
-    font-size: 40px;
+    font-size: 2.6em;
     position: absolute;
-    top: 80px;
-    left: 160px;
-    width: 250px;
+    top: 16vh;
+    left: 7vw;
+    width: 35vw;
     height: auto;
 }
 
@@ -83,16 +87,36 @@ li {
 }*/
 
 #info-div {
+    margin-top: 10vh;
     position: relative;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#favorites-div {
+    margin-top: 4vh;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-#favorite-1 {
-
+#favorite-1 #favorite-2 {
 }
 
-#favorite-2 {
+#vaporflies #airForce {
+    font-size: 2em;
+}
 
+#video {
+    width: 600px;
+    height: 400px;
+}
+
+#fav-img {
+    width: 600px;
+    height: 400px;
 }
 
 #footer {
