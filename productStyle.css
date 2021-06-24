@@ -181,8 +181,9 @@ button[type=button]:hover span:after {
     border: none;
 }
 
-button[type=submit] {
+input[type=submit] {
     font-size: 1vw;
+    font-weight: bold;
     padding: 12px 20px;
     margin: 8px 0;
     border: none;
@@ -192,7 +193,7 @@ button[type=submit] {
     transition-duration: 0.5s;
 }
 
-button[type=submit]:hover {
+input[type=submit]:hover {
     color:hsl(266, 100%, 45%);
 }
 
