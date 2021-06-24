@@ -9,12 +9,13 @@ body {
     height: 100%;
 }
 
-#nav-div{
+#nav-div {
     position: fixed;
     width: 100%;
     background-color: white;
     z-index: 1;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(37, 37, 37);
+    color: rgb(31, 31, 31);
     font-size: 17px;
 }
 
@@ -35,10 +36,11 @@ li {
     text-align: center;
     text-decoration: none;
     color: rgb(31, 31, 31);
+    transition: all 0.2s;
 }
 
 .nav-link:hover {
-    background-color: darkgrey;
+    background-color: rgba(99, 0, 230, 0.3);
 }
 
 @media screen and (max-width: 600px) {
@@ -56,100 +58,150 @@ li {
 #diag-div {
     display: flex;
     background-image: 
-        url("https://i.imgur.com/DfGGdNC.png"),
-        url("https://i.imgur.com/Bm4JAEW.png");
+        url("https://i.imgur.com/TiCNlPx.png"), /*Shoe*/
+        url("https://gist.githubusercontent.com/MichaelMullet/5d5f7f5779ee4855aac759dbd95e170f/raw/f311f66b425a9ee140cdf4f58bef8bdabdc9adfb/GradientNow.svg");
     background-repeat: no-repeat;
     background-position:
-        top right,
-        0px 40px;
+        top right, /*Shoe*/
+        top left;
     background-size: 
-        60%,
-        100%;
+        75%,/*Shoe*/
+        115%;
     height: 100vh;
 }
 
 #title {
-    font-size: 2.6em;
+    font-size: 2.6vw;
     position: absolute;
-    top: 16vh;
-    left: 7vw;
-    width: 35vw;
+    top: 18vh;
+    left: 8vw;
+    width: 40vw;
     height: auto;
+    color: rgb(37, 37, 37);
 }
-
-/*#main-img {
-    max-width: 80%;
-    max-height: auto;
-    position: absolute;
-    right: -325px;
-    top: -260px;
-    transform: rotate(-13deg);
-}*/
 
 #info-div {
     margin-top: 10vh;
     position: relative;
+    color: rgb(37, 37, 37);
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.4vw;
 }
 
 #favorites-div {
-    margin-top: 4vh;
+    margin-top: 6vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-#favorite-1 #favorite-2 {
-}
-
-#vaporflies #airForce {
-    font-size: 2em;
+    font-size: 1.5vw;
 }
 
 #video {
-    width: 600px;
-    height: 400px;
+    width: 40vw;
+    height: 75%;
 }
 
 #fav-img {
-    width: 600px;
-    height: 400px;
+    width: 40vw;
+    height: 75%;
+}
+
+a.shop:link {
+    color: white;
+    text-decoration: none;
+}
+
+a.shop:visited {
+    color: white;
+    text-decoration: none;
+}
+
+button[type=button] {
+    width: 10vw;
+    padding: 14px 20px;
+    color: white;
+    background-color: hsl(266, 100%, 45%);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button[type=button] span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button[type=button] span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button[type=button]:hover span {
+    padding-right: 25px;
+}
+
+button[type=button]:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 #footer {
     display: flex;
     position: relative;
+    flex-direction: column;
+    top: 60px;
     background-color: rgb(63, 63, 63);
     color: white;
     text-decoration: none;
+    padding: 55px 90px 0px 90px;
 }
 
 #email-label {
-
+    font-size: 1.4vw;
+    margin-bottom: 10px;
 }
 
 #email {
-
-}
-
-#form {
-
-}
-
-#copyright {
-}
-
-button[type=button] {
-
-}
-
-button[type=button]:hover {
-
+    font-size: 1vw;
+    width: 20vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
 }
 
 button[type=submit] {
+    font-size: 1vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    color: rgb(37, 37, 37);
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
 
+button[type=submit]:hover {
+    color:hsl(266, 100%, 45%);
+}
+
+#copyright {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+a.endnotes:link, a.endnotes:visited {
+    color: white;
 }
